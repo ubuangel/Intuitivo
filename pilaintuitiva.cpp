@@ -40,7 +40,7 @@ cout<<"en cualquier momento puede precionar CTRL +c para Salir del programa XD"<
 		popila(p,tamano,bandera);
 	cout<<'\n';
 }
-cout<<"pila desapilada totalmente hasta luego!!"<<'\n';
+cout<<"pila desapilada totalmente hasta luego amigo!!"<<'\n';
 	return 0;
 }
 
