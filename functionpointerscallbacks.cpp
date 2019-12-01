@@ -1,16 +1,15 @@
+#include <iostream>
+
 template<typename T>
 T compare(T &a,T &b){
-	if (a>b)return 1;
-	else return -1;
+	return (a>b)?1 :-1;
 
 }
 template<typename T>
 T compare2(T &a,T &b){
-	if (a>b)return -1;
-	else  return 1;
+	return (a>b)?-1 :1;
 }
 template<typename T>
-
 void buble(T a[],int n,T (*func)(T&,T&)){
 	T yem;
 	for (int i = 0; i < n; ++i) {
@@ -29,27 +28,25 @@ void buble(T a[],int n,T (*func)(T&,T&)){
 int main(){
 
 char d[] ={'s','r','q','t','p'};
-
 int n=sizeof(d)/sizeof(d[0]);
 
-cout<<endl;;
+std::cout<<std::endl;
 
 	buble(d,5,compare);//con char o sin el
 		for(int i=0;i<n;i++)
-				cout<<d[i]<<" ";
-		cout<<endl;
+				std::cout<<d[i]<<" ";
+		std::cout<<std::endl;
 
 
 int a[]={3,8,20,5,6,4};
-	
 int e=sizeof(a)/sizeof(a[0]);
 
 	buble(a,e,compare);
 	for(int i=0;i<e;i++)
-			cout<<a[i]<<" ";
-	cout<<endl;
+			std::cout<<a[i]<<" ";
+	std::cout<<std::endl;
 	buble(a,e,compare2);
 	for(int i=0;i<e;i++)
-		cout<<a[i]<<" ";
+		std::cout<<a[i]<<" ";
 
 }
