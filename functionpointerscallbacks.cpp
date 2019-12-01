@@ -1,12 +1,12 @@
 #include <iostream>
 
 template<typename T>
-T compare(T &a,T &b){
+inline T compare(T &a,T &b){
 	return (a>b)?1 :-1;
 
 }
 template<typename T>
-T compare2(T &a,T &b){
+inline T compare2(T &a,T &b){
 	return (a>b)?-1 :1;
 }
 template<typename T>
